@@ -131,7 +131,7 @@ function rg_plugin_menu() {
 }
 
 function rg_options_page() {
-	include(WP_PLUGIN_DIR.'/wp-rescuegroups-master/options.php');  
+	include(WP_PLUGIN_DIR.'/RescueGroups.org-Toolkit-Plugin-v1-master/options.php');  
 }
 
 function register_rg_avail_key_settings() {
