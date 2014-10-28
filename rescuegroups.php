@@ -3,7 +3,7 @@
 Plugin Name: RescueGroups.org Toolkit Plugin v1
 Plugin URI: https://github.com/bderstine/RescueGroups.org-Toolkit-Plugin-v1
 Description: A basic plugin to include the javascript toolkit files from RescueGroups.org
-Version: 1.0
+Version: 1.1
 Author: Brad Derstine
 Author URI: http://bizzartech.com
 License: GPL2
@@ -21,47 +21,19 @@ function check_for_rg_available($posts){
 		}
 	}
  
-	if ($shortcode_found) {
-		wp_enqueue_style('rg-style-1', 'http://toolkit.rescuegroups.org/javascript/v2.0/yui/build/container/assets/skins/sam/container.css');
-		wp_enqueue_style('rg-style-2', 'http://toolkit.rescuegroups.org/javascript/v2.0/styles_list?key='.get_option('rg_avail_key'));
-		wp_enqueue_style('rg-style-3', 'http://toolkit.rescuegroups.org/javascript/v2.0/styles_random?key='.get_option('rg_avail_key'));
-
-		wp_enqueue_script('rg-script-1', 'http://toolkit.rescuegroups.org/javascript/v2.0/?key='.get_option('rg_avail_key'));
-		wp_enqueue_script('rg-script-2', 'http://toolkit.rescuegroups.org/javascript/v2.0/yui/build/yahoo-dom-event/yahoo-dom-event.js');
-		wp_enqueue_script('rg-script-3', 'http://toolkit.rescuegroups.org/javascript/v2.0/yui/build/animation/animation-min.js');
-		wp_enqueue_script('rg-script-4', 'http://toolkit.rescuegroups.org/javascript/v2.0/yui/build/container/container-min.js');
-	}
- 
 	return $posts;
 }
 
 function rg_available() {
-	$output = "<!-- Begin Pet Adoption Toolkit -->
-		<div class=\"rgPetDetails\" id=\"rgPetDetails\"></div>
-		<div id=\"rgPetsContainer\"></div>
-		<script type=\"text/javascript\" language=\"JavaScript\">
-		try{
-		  new cPets('rgPets');
-		  rgPets.fields = 'name,breed,pictmn1';
-		  rgPets.detailPage = 'popup';
-		  rgPets.sortbyField = 'name';
-		  rgPets.sortbyOrder = 'asc';
-		  rgPets.petFields['pictmn1']['name'] = '';
-		  rgPets.picSize = 'thumbnail';
-		  rgPets.enableSearch = false;
-		  rgPets.paging = false;
-		  rgPets.perRow = 4;
-		  rgPets.rows = 999999;
-		  rgPets.grid('rgPetsContainer');
-		}catch(e){
-		  if (e) {
-		    document.getElementById('rgPetsContainer').innerHTML = \"Oops! \" +
-		    \"There was a problem getting our pet list. \" +
-		    \"Please try again later. Thank you!\";
-		  }
-		}
-		</script>
+	$output = "<!--
+		Pet Adoption Toolkit (JavaScript)
+		Provided by RescueGroups.org completely free of cost,
+		commitment, external links or advertisements
+		http://www.rescuegroups.org
+		-->
+		<script src=\"https://toolkit.rescuegroups.org/j/3/".get_option('rg_avail_key')."/toolkit.js\"></script>
 		<!-- End Pet Adoption Toolkit -->";
+
 	return $output;
 }
 
@@ -79,47 +51,19 @@ function check_for_rg_adopted($posts){
 		}
 	}
  
-	if ($shortcode_found) {
-		wp_enqueue_style('rg-style-1', 'http://toolkit.rescuegroups.org/javascript/v2.0/yui/build/container/assets/skins/sam/container.css');
-		wp_enqueue_style('rg-style-2', 'http://toolkit.rescuegroups.org/javascript/v2.0/styles_list?key='.get_option('rg_adopt_key'));
-		wp_enqueue_style('rg-style-3', 'http://toolkit.rescuegroups.org/javascript/v2.0/styles_random?key='.get_option('rg_adopt_key'));
-
-		wp_enqueue_script('rg-script-1', 'http://toolkit.rescuegroups.org/javascript/v2.0/?key='.get_option('rg_adopt_key'));
-		wp_enqueue_script('rg-script-2', 'http://toolkit.rescuegroups.org/javascript/v2.0/yui/build/yahoo-dom-event/yahoo-dom-event.js');
-		wp_enqueue_script('rg-script-3', 'http://toolkit.rescuegroups.org/javascript/v2.0/yui/build/animation/animation-min.js');
-		wp_enqueue_script('rg-script-4', 'http://toolkit.rescuegroups.org/javascript/v2.0/yui/build/container/container-min.js');
-	}
- 
 	return $posts;
 }
 
 function rg_adopted() {
-	$output = "<!-- Begin Pet Adoption Toolkit -->
-		<div class=\"rgPetDetails\" id=\"rgPetDetails\"></div>
-		<div id=\"rgPetsContainer\"></div>
-		<script type=\"text/javascript\" language=\"JavaScript\">// <![CDATA[
-		try{
-		  new cPets('rgPets');
-		  rgPets.fields = 'name,breed';
-		  rgPets.detailPage = 'popup';
-		  rgPets.sortbyField = 'name';
-		  rgPets.sortbyOrder = 'asc';
-		  rgPets.petFields['pictmn1']['name'] = '';
-		  rgPets.picSize = 'thumbnail';
-		  rgPets.enableSearch = false;
-		  rgPets.paging = false;
-		  rgPets.perRow = 4;
-		  rgPets.rows = 999999;
-		  rgPets.grid('rgPetsContainer');
-		}catch(e){
-		  if (e) {
-		    document.getElementById('rgPetsContainer').innerHTML = \"Oops! \" +
-		    \"There was a problem getting our pet list. \" +
-		    \"Please try again later. Thank you!\";
-		  }
-		}
-		// ]]></script>
+	$output = "<!--
+		Pet Adoption Toolkit (JavaScript)
+		Provided by RescueGroups.org completely free of cost,
+		commitment, external links or advertisements
+		http://www.rescuegroups.org
+		-->
+		<script src=\"https://toolkit.rescuegroups.org/j/3/".get_option('rg_adopt_key')."/toolkit.js\"></script>
 		<!-- End Pet Adoption Toolkit -->";
+
 	return $output;
 }
 
