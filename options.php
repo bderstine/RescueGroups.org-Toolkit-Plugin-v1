@@ -27,13 +27,13 @@
 </form>
 
 The toolkit keys can be generated and managed at:<br/>
-<a href="https://manage.rescuegroups.org/toolkit_keys" target="_blank">https://manage.rescuegroups.org/toolkit_keys</a><br/>
+<a href="https://manage.rescuegroups.org/toolkit" target="_blank">https://manage.rescuegroups.org/toolkit</a><br/>
 <br/>
 More info about RescueGroups.org Toolkit:<br/>
 <a href="https://www.rescuegroups.org/services/pet-adoption-toolkit/" target="_blank">https://www.rescuegroups.org/services/pet-adoption-toolkit/</a><br/>
 <br/>
 Documentation about generating keys and using toolkit:<br/>
-<a href="http://support.rescuegroups.org:8091/pages/viewpage.action?pageId=951031" target="_blank">http://support.rescuegroups.org:8091/pages/viewpage.action?pageId=951031</a><br/>
+<a href="https://userguide.rescuegroups.org/x/94IO" target="_blank">https://userguide.rescuegroups.org/x/94IO</a><br/>
 <br/>
 <strong>Don't mix available and adopted pets!</strong><br/>
 Generate 2 keys, one for each type (available and adopted), and display them separate so there is no confusion!<br/>
