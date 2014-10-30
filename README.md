@@ -4,7 +4,7 @@ RescueGroups.org-Toolkit-Plugin-v1
 WordPress plugin for RescueGroups.org Toolkit
 
 The keys can be found at:
-https://manage.rescuegroups.org/toolkit
+https://manage.rescuegroups.org/toolkits
 
 More info about RescueGroups.org Toolkit:
 https://www.rescuegroups.org/services/pet-adoption-toolkit/

@@ -27,7 +27,7 @@
 </form>
 
 The toolkit keys can be generated and managed at:<br/>
-<a href="https://manage.rescuegroups.org/toolkit" target="_blank">https://manage.rescuegroups.org/toolkit</a><br/>
+<a href="https://manage.rescuegroups.org/toolkits" target="_blank">https://manage.rescuegroups.org/toolkits</a><br/>
 <br/>
 More info about RescueGroups.org Toolkit:<br/>
 <a href="https://www.rescuegroups.org/services/pet-adoption-toolkit/" target="_blank">https://www.rescuegroups.org/services/pet-adoption-toolkit/</a><br/>
